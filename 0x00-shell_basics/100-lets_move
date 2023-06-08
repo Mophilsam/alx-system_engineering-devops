@@ -1,2 +1,5 @@
 #!/bin/bash
-mkdir -p /tmp/u && mv [A-Z]* /tmp/u 2>/dev/null
+if mkdir -p /tmp/u
+	then
+		  mv [A-Z]* /tmp/u 2>/dev/null
+		  fil
