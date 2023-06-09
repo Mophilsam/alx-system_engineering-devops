@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -A1v | awk 'BEGIN{ORS=", "} {print} END{print ""}'
