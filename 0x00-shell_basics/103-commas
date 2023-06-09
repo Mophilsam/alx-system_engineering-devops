@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "%s, " . .. $(ls -1pv | grep -v / | sort -V) $(ls -d1pv */ | sort -V)$(echo)
+printf "%s, " . .. $(ls -1v | grep -v / | sort -V) $(ls -d1v */ | sort -V)$(echo)
