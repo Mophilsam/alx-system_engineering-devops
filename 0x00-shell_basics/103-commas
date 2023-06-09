@@ -1,2 +1,0 @@
-#!/bin/bash
-find . -maxdepth 1 -printf "%P,%y/\n" | sort -k 1.2
