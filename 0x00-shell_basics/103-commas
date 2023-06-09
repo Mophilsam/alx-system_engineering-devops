@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -maxdepth 1 -printf "%p,%y/\n" | sort -k 1.2o
+ls -ap1 | grep -v '^\.\.$' | sort -d -k1.2 | tr '\n' ',' | sed 's/,$/\n/'
