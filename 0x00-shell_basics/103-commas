@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -apv|paste -sd, -|echo
+ls -a | tr '\n' ',' | sed 's/,$/\n/' | sed 's/\([^0-9a-zA-Z]\)\([0-9a-zA-Z]\)/\1 \2/g' | sed 's/\([0-9a-zA-Z]\)\([^0-9a-zA-Z]\)/\1 \2/g' | sort -k 1.2 | tr -d ' ' | sed 's/,$/\n/' | sed 's/[^\/]$/&\//g'o
