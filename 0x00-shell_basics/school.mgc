@@ -1,2 +1,2 @@
 #!/bin/bash
-echo -e "0 string SCHOOL_DATA\n!:mime application/x-school-data" | file --compile -m - school.mgc
+echo -e '0 string SCHOOL\n!:mime application/school' > school.mgc
