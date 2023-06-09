@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "%s, " ./, ../, $(ls -1v | grep -v / | sort -V) $(ls -d1v */ | sed 's/.$//' | sort -V | sed 's/$/\//')$(echo)
+printf "%s, " ./ ../ $(ls -1v | grep -v / | sort -V) $(ls -d1v */ | sed 's/.$//' | sort -V | sed 's/$/\//')$(echo)
