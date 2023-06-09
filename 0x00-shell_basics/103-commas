@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -A1v | awk 'BEGIN{ORS=", "} {print} END{print ""}'
+find . -mindepth 1 -maxdepth 1 -printf "%f\n" | sort -fd | awk 'BEGIN{ORS=", "} {print} END{print ""}'
