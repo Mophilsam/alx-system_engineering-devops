@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -Ap | sort -fd | awk '{ORS = ($0 == "./" || $0 == "../") ? ", " : (($0 ~ /\/$/) ? ", " : ", ")}1' | sed 's/, $/\n/'
+printf "%s, " . .. $(ls -1pv | grep -v / | sort -V) $(ls -d1pv */ | sort -V); echo
