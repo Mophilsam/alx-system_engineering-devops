@@ -1,2 +1,2 @@
 #!/bin/bash
-printf '%s\n' ./* | sort -d -k1.2 | tr '\n' ',' | sed 's/,$/\n/' | sed 's/\(.*\/\)$/ \1/' | sed 's/,\([^/]\)/, \1/g' | sed 's/,$//'
+find . -maxdepth 1 -printf "%P,%y/\n" | sort -k 1.2
