@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $sum_bestchol
+echo "$(( $(printf "%d" "0x$(echo "${WATER^^}" | tr 'water' '01234')" ) + $(printf "%d" "0x$(echo "${STIR^^}" | tr 'water' '01234')" ) ))" | xxd -p -r | tr '\n' ' ' | xxd -p | tr '01234567' 'bestchol'
