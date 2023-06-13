@@ -1,2 +1,2 @@
 #!/bin/bash
-#echo $(printf "%x" "$DECIMAL")
+echo $DECIMAL | xargs -n1 printf "%x\n")
